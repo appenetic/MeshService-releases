@@ -1,25 +1,33 @@
-# JUNG HOME Service — Downloads und Updates
+# Mesh Service – Downloads und Updates
 
-Dieses Repository enthält nur die fertigen Pakete von **JUNG HOME Service**, dem Werkzeug
-zur Inbetriebnahme und Wartung von JUNG-HOME-Geräten. Der Quellcode liegt woanders.
+Dieses Repository enthält die fertigen Pakete von **Mesh Service**, der Software für die
+Inbetriebnahme, Einstellung und Analyse von Bluetooth-Mesh-Anlagen. Unterstützt werden Geräte von
+JUNG HOME und Steinel. Der Quellcode liegt nicht hier.
+
+Website: https://meshservice.de/
 
 ## Dateien je Release
 
 | Datei | Inhalt |
 |---|---|
-| `JUNG-HOME-Service-macos.zip` | die App für macOS (Apple Silicon) |
-| `JUNG-HOME-Service-windows.zip` | die App für Windows 10/11, 64-bit |
-| `update.json` | signierte Beschreibung des Releases; danach sucht die App beim Selbst-Update |
+| `Mesh-Service-macos.zip` | das Programm für macOS 14 oder neuer, Mac mit Apple-Chip |
+| `Mesh-Service-windows.zip` | das Programm für Windows 10 (ab 1709) und Windows 11, 64 Bit |
+| `Mesh-Service-Anleitung-X.Y.Z.pdf` | die Anleitung auf Deutsch |
+| `Mesh-Service-Manual-X.Y.Z.pdf` | die Anleitung auf Englisch |
+| `update.json` | signierte Beschreibung des Releases; danach sucht das Programm beim Update |
 | `hashes.json` | Prüfsummen der Pakete |
 
-## Selbst-Update
+Die neueste Version laden Sie direkt über
+`releases/latest/download/Mesh-Service-macos.zip` bzw. `…/Mesh-Service-windows.zip`.
 
-Die App prüft beim Start, ob unter
-`releases/latest/download/update.json` eine neuere Version steht, zeigt die Änderungen an
-und ersetzt sich auf Wunsch selbst. Die Beschreibung ist mit einem Ed25519-Schlüssel
-signiert; die App installiert nur, was diese Signatur trägt und dessen Prüfsumme stimmt.
+## Updates
+
+Das Programm prüft beim Start und alle sechs Stunden, ob unter
+`releases/latest/download/update.json` eine neuere Version steht, zeigt die Änderungen an und
+ersetzt sich auf Wunsch selbst. Die Beschreibung ist mit einem Ed25519-Schlüssel signiert; das
+Programm installiert nur Pakete mit gültiger Signatur und passender Prüfsumme.
 
 ## Lizenz
 
-Die App läuft nur mit einer gültigen, an den Computer gebundenen Lizenzdatei. Anfragen mit
-der Computer-ID, die die App anzeigt, an saschaheld@me.com.
+Das Programm läuft nur mit einer gültigen Lizenzdatei, die an den Rechner gebunden ist. Die
+Anfrage mit der Computer-ID, die das Programm anzeigt, geht an saschaheld@me.com.
